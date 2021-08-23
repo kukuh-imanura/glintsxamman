@@ -145,7 +145,7 @@ header {
 
 .sidebar-item {
 	padding: 15px 35px;
-	margin: 1px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	background-color: rgba(255,192,205,0.8);
 	display: none;
 	/*flex-wrap: flex;*/
