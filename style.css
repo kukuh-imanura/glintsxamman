@@ -284,6 +284,7 @@ card:hover {
 card h1 {
 	font-size: 100px;
 	margin-bottom: 20px;
+	size: 7em;
 }
 
 card h2 {
