@@ -1,0 +1,725 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: cursive;
+}
+
+.dark {
+	background-color: black;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+header {
+
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	/*background-color: white;*/
+}
+
+.nav {
+	display: flex;
+	background-color: rgba(255,192,205,0.8);
+	z-index: 10;
+	position: fixed;
+	width: 100%
+}
+
+.nav .logo {
+	padding: 8px 20px;
+	float: left;
+	color: white;
+	text-shadow: 0px 2px gray;
+	/*font-family: cursive;*/
+	cursor: default;
+}
+
+.clear {
+	clear: left;
+}
+
+
+
+.nav-item {
+	float: right;
+	height: 50px;
+	line-height: 50px;
+}
+
+.nav-item li {
+	float: left;
+	padding: 5px 10px;
+}
+
+.nav-item a {
+	color: white;
+}
+
+.nav-item .mode {
+	padding: 5px 10px 5px 30px;
+}
+
+.mode {
+	/*background-color: gray;*/
+	border-left: 3px solid white;
+	/*border-radius: 5px;*/
+	margin-left: 20px;
+	padding: 0px;
+}
+
+.mode span {
+	margin: 0px 0px 0px 5px;
+	/*border-bottom: 2px solid white;*/
+	position: relative;
+	top: 2px;
+	/*font-size: 20px;*/
+	color: white;
+	/*background-color: */
+}
+
+.mode span:hover {
+	cursor: pointer;
+}
+
+.nav-dropdown {
+	width: 54.38px;
+	padding: 0px;
+	/*background-color: rgba(255,192,205,0.5);*/
+}
+
+.nav-dropdown:hover .dropdown-item {
+	display: block;
+}
+
+.dropdown {
+}
+
+.nav-dropdown .dropdown-item {
+	margin-top: 10px;
+	flex-wrap: flex;
+	display: none;
+}
+
+.dropdown-item  li {
+	margin: 0;
+	padding: 0px;
+	text-align: center;
+	text-shadow: 1px 1px gray;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	/*background-color: rgba(255,192,205);*/
+}
+
+.sidebar {
+	/*background-color: gray;*/
+	/*display: none;*/
+	/*position: relative;*/
+	float: right;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.sidebar .fa-bars {
+	/*float: right;*/
+	/*text-align: right;*/
+	font-size: 30px;
+	height: 60px;
+	line-height: 60px;
+	color: white;
+	cursor: pointer;
+	display: none;
+}
+
+.sidebar .fa-bars:hover {
+	opacity: 0.8;
+}
+
+.sidebar-item {
+	padding: 15px 35px;
+	margin: 1px 0px 0px 0px;
+	background-color: rgba(255,192,205,0.8);
+	display: none;
+	/*flex-wrap: flex;*/
+	position: absolute;
+	right: 0px;
+	/*z-index: 10;*/
+}
+
+.sidebar:hover .sidebar-item {
+	display: block;
+}
+
+.sidebar-item li {
+	/*background-color: gray;*/
+	/*text-align: left;*/
+	padding: 5px 0px;
+	/*width: 100%;*/
+}
+
+.sidebar-item li a {
+	color: white;
+	font-size: 18px;
+}
+
+.sidebar-dropdown {
+	margin-right: 0px;
+	/*background-color: black;*/
+}
+
+.sd {
+	/*padding-bottom: 5px;*/
+}
+
+.sd-item {
+	display: none;
+	/*background-color: gray;*/
+	/*text-align: left;*/
+	/*padding: 0px;*/
+	margin: 10px 15px 0px 0px;
+}
+
+.sd-item li {
+	padding: 0px;
+	font-size: 15px;
+	/*text-align: left;*/
+}
+
+.sidebar-dropdown:hover .sd-item {
+	/*opacity: 0.5;*/
+	display: block;
+}
+
+.sidebar-item .mode {
+	border: 0px;
+	margin: 0px;
+}
+
+.sidebar-item .mode span {
+	/*float: left;*/
+	/*text-align: left;*/
+	/*margin-right: 5px;*/
+}
+
+.top {
+	height: 560px;
+	/*background-color: gray;*/
+	text-align: center;
+	box-sizing: border-box;
+	background-image: url(img/bg.jpeg);
+	/*background-image: url(img/bg4.jpeg);*/
+	/*background-image: url(img/bg9.jpeg);*/
+	background-size: cover;
+}
+
+.top .sweet {
+	height: 570px;
+	/*line-height: 570px;*/
+}
+
+.sweet h1 {
+	cursor: default;
+	font-size: 65px;
+	display: inline-block;
+	margin-top: 215px;
+	color: pink;
+	text-shadow: 0px 3px gray;
+}
+
+.sweet a {
+	display: inline-block;
+	background-color: pink;
+	border-radius: 10px;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px 20px;
+	box-shadow: 0px 5px gray;
+}
+
+.sweet a:hover {
+	opacity: 0.9;
+}
+
+.sweet a:active {
+	box-shadow: none;
+	position: relative;
+	top: 5px;
+}
+
+.main {
+	/*background-color: gray;*/
+	margin: 100px 0px;
+}
+
+.card {
+	/*background-color: gray;*/
+	display: flex;
+	padding: 0px 70px;
+}
+
+card {
+	background-color: pink;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	width: 25%;
+	padding: 50px 0px;
+	border-radius: 20px;
+}
+
+card:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+card h1 {
+	font-size: 100px;
+	margin-bottom: 20px;
+}
+
+card h2 {
+	font-size: 30px;
+}
+
+.second {
+	display: flex;
+}
+
+.second-item {
+	width: 50%;
+	text-align: right;
+}
+
+.second-item img {
+	margin: 50px 25px 0px 0px ;
+	width: 200px;
+}
+
+.second-item .item {
+	margin-top: 55px;
+}
+
+.second-item h1,h3 {
+	text-align: left;
+	color: pink;
+	margin-left: 25px;
+}
+
+.second-item h1 {
+	font-size: 50px;
+}
+
+.second-item h3 {
+	font-size: 25px;
+}
+
+.content hr {
+	margin: 0 auto;
+	border: none;
+	border-radius: 5px;
+	height: 7px;
+	size: 5px;
+	width: 500px;
+	background-color: pink;
+}
+
+.extra {
+	display: flex;
+	/*height: 400px;*/
+	margin-top: 200px;
+	padding: 70px;
+	/*border-radius: 20px;*/
+	/*background-color: rgba(255,192,205,0.5);*/
+}
+
+.extra-item {
+	width: 50%;
+}
+
+.extra-img {
+	text-align: center;
+}
+
+.extra-img img {
+	width: 400px;
+	height: 400px;
+	border-radius: 100%;
+	margin-right: 25px;
+}
+
+.extra-item p {
+	text-align: center;
+	color: pink;
+	font-size: 25px;
+}
+
+.extra-item b {
+	color: hotpink;
+}
+
+.text {
+	padding: 60px 0px 0px 0px;
+}
+
+.form {
+	/*background-color: gray;*/
+	padding: 30px 50px;
+	margin: 100px 0px;
+	/*border-top: 1px solid pink;*/
+}
+
+.form h2 {
+	text-align: center;
+	/*margin-bottom: 20px;*/
+	color: pink;
+	font-size: 40px;
+}
+
+.form .input {
+	outline: none;
+}
+
+form {
+	/*background-color: white;*/
+	width: 50%;
+	height: 200px;
+	margin: 0 auto;
+	padding: 20px 40px 30px 40px;
+	text-align: center;
+	border: 1px solid pink;
+	border-radius: 10px;
+}
+
+form button {
+	padding: 10px 20px;
+	margin-top: 10px;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	background-color: pink;
+	color: white;
+}
+
+form button:hover {
+	background-color: lightpink;
+}
+
+.form-item {
+	display: flex;
+	/*box-sizing: border-box;*/
+	margin-top: 10px;
+}
+
+.form-item h3 {
+	width: 110px;
+	margin: 5px 0px 0px 0px;
+}
+
+.form-item .contact {
+	/*margin-top: 5px;*/
+}
+
+.form-item .h3 {
+	width: 10px;
+	margin-right: 10px;
+}
+
+.form-item .input {
+	/*box-sizing: border-box;*/
+	width: 100%;
+	color: pink;
+	padding: 10px 20px;
+	border: 1px solid pink;
+	border-radius: 10px;
+	transform-style: none;
+}
+
+.form-item .input:hover {
+	/*border: 1px solid lightpink;*/
+}
+
+.form-item .text {
+	height: 80px;
+}
+
+footer {
+	background-color: pink;
+	padding: 10px 0px;
+	/*margin-top: 100px;*/
+	/*height: 200px;*/
+}
+
+.footer {
+	display: flex;
+	/*margin-top: 50px;*/
+}
+
+.foot-item {
+	width: 33.33%;
+}
+
+.foot-item h1 {
+	cursor: default;
+	color: white;
+	text-shadow: 0px 3px gray;
+}
+
+.foot-item h2 {
+	margin-left: 200px;
+	color: white;
+	font-size: 25px;
+}
+
+.foot-item hr {
+	height: 5px;
+	border: none;
+	border-radius: 3px;
+	background-color: white;
+	margin: 5px 0px;
+}
+
+.sosmed span {
+	/*color: black;*/
+	/*font-size: 20px;*/
+	height: 20px;
+	line-height: 20px;
+}
+
+.foot-item h3 {
+	font-size: 15px;
+	color: white;
+	padding: 3px 0px;
+	margin-left: 200px;
+}
+
+.foot-item h4 {
+	color: white;
+	margin-top:65px;
+}
+
+
+
+/*DARK MODE*/
+
+/*.dark-mode {
+	background-color: black;
+}*/
+
+
+
+
+
+
+
+/*DARK MODE*/
+
+.dark-mode {
+	background-color: black;
+}
+
+.dark-mode .nav {
+	background-color: rgba(249,105,180,0.8);
+}
+
+.dark-mode .top {
+	background-image: url(img/bg9.jpeg);
+}
+
+.dark-mode .sweet h1 {
+	color: white !important;
+}
+
+.dark-mode .sweet a {
+	background-color: hotpink !important;
+	box-shadow: 0px 5px white !important;
+}
+
+.dark-mode .second-item h1 {
+	color: hotpink !important;
+}
+
+.dark-mode .second-item h3 {
+	color: hotpink !important;
+}
+
+.dark-mode .content hr {
+	background-color: hotpink;
+}
+
+.dark-mode card {
+	background-color: hotpink;
+	color: black;
+}
+
+.dark-mode .text p {
+	color: hotpink;
+}
+
+.dark-mode .text b {
+	color: white;
+}
+
+.dark-mode .form h2 {
+	color: hotpink;
+}
+
+.dark-mode form {
+	border-color: hotpink;
+}
+
+.dark-mode .form-item h3 {
+	color: hotpink;
+}
+
+.dark-mode .form-item .input {
+	background-color: black;
+	color: hotpink;
+	border-color: hotpink;
+}
+
+.dark-mode form button {
+	background-color: hotpink;
+	color: black;
+}
+
+.dark-mode form button:hover {
+	opacity: 0.9;
+}
+
+.dark-mode footer {
+	background-color: hotpink;
+}
+
+.dark-mode .sosmed h2 {
+	color: black;
+}
+
+.dark-mode .sosmed hr {
+	background-color: black;
+}
+
+.dark-mode .sosmed h3 {
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

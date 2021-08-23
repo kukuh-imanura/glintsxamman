@@ -1,53 +1,193 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calculator</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>Individual Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 </head>
 <body>
 
-<div class="calculator">
-	<input class="calculator-screen" type="text" value="0" disabled />
+<header>
 
-	<div class="calculator-keys">
+	<div class="nav">
+		<div class="container">
+			<h1 class="logo">Sweet</h1>
 
-		<div class="row">
-			<button class="all-clear">AC</button>
-			<button class="percentage">%</button>
-			<button class="operator" value="/">&divide;</button>
+			<ul class="sidebar">
+				<span class="fas fa-bars"></span>
+				<ul class="sidebar-item">
+					<li>
+						<a href="#">Home</a>
+					</li>
+
+					<li class="sidebar-dropdown">
+						<a href="#" class="sd">
+							<span class="fas fa-caret-down"></span>
+							Menu
+							<ul class="sd-item">
+								<li>Bread</li>
+								<li>Cake</li>
+								<li>Desert</li>
+							</ul>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">Reservation</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+
+					<li class="mode">
+						<a>Mode</a>
+						<span class="fa fa-toggle-off fa-lg toggle" onclick="toggle()"></span>
+					</li>
+				</ul>
+			</ul>
+
+			<ul class="nav-item">
+				<li>
+					<a href="#">Home</a>
+				</li>
+
+				<li class="nav-dropdown">
+					<a href="#" class="dropdown">
+						Menu
+						<span class="fas fa-caret-down"></span>
+						<ul class="dropdown-item">
+							<li>Bread</li>
+							<li>Cake</li>
+							<li>Desert</li>
+						</ul>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">Reservation</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+
+				<li class="mode">
+					<a>Mode</a>
+					<span class="fa fa-toggle-off fa-lg darkMode" onclick="toggle()"></span>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="top">
+		<div class="container">
+			<div class="sweet">
+				<h1 class="sweetsatu">Sweet</h1><br>
+				<a href="#">Shop</a>
+			</div>
+		</div>
+	</div>
+	
+</header>
+
+<div class="content">
+	<div class="container">
+
+		<div class="second">
+			<div class="second-item">
+				<img src="img/ico.ico">
+			</div>
+			<div class="second-item">
+				<h1 class="item sisatu">Bake</h1>
+				<h3 class="">The</h3>
+				<h1 class="sisatu">World</h1>
+			</div>
+		</div>
+		<hr class="hr">
+
+		<div class="main">
+			<div class="card">
+				<card>
+					<h1 href="#" class="fas fa-bread-slice"></h1>
+					<h2>Bread</h2>
+				</card>
+				<card>
+					<h1 href="#" class="fas fa-birthday-cake"></h1>
+					<h2>Cake</h2>
+				</card>
+				<card>
+					<h1 href="#" class="fas fa-cookie-bite"></h1>
+					<h2>Desert</h2>
+				</card>
+			</div>
 		</div>
 
-		<div class="row">
-			<button class="number" value="7">7</button>
-			<button class="number" value="8">8</button>
-			<button class="number" value="9">9</button>
-			<button class="operator" value="*">&times;</button>
+		<div class="extra">
+
+			<div class="extra-item img">
+				<div class="extra-img">
+					<img src="img/img.jpeg">
+				</div>
+			</div>
+
+			<div class="extra-item text">
+				<div></div>
+				<p><b>Pastry</b> isn't only about the <b>Taste</b></p>
+				<p>It's about</p>
+				<p>The <b>Shape</b></p>
+				<p>The <b>Texture</b></p>
+				<p>The <b>Smell</b> and the <b>Temperature</b></p>
+				<p>Even what you <b>Drink</b> it with</p>
+				<br>
+				<p class="name"><b>~<i>Sweet</i></b></p>
+			</div>
 		</div>
 
-		<div class="row">
-			<button class="number" value="4">4</button>
-			<button class="number" value="5">5</button>
-			<button class="number" value="6">6</button>
-			<button class="operator" value="-">-</button>
+		<div class="form">
+			<h2>Join us</h2>
+			<br><hr><br>
+
+			<form>
+				<div class="form-item">
+					<h3 class="contact">Contact  </h3>
+					<h3 class="h3 contact">:</h3>
+					<input class="input" type="text" name="" value=" Phone Number / Email">
+				</div>
+
+				<div class="form-item ">
+					<h3>Reason  </h3>
+					<h3 class="h3">:</h3>
+					<textarea class="input text"> What is your reason Join us?</textarea>
+				</div>
+				<button class="input">Submit</button>
+			</form>
+
 		</div>
 
-		<div class="row">
-			<button class="number" value="1">1</button>
-			<button class="number" value="2">2</button>
-			<button class="number" value="3">3</button>
-			<button class="operator" value="+">+</button>
-		</div>
-
-		<div class="row">
-			<button class="number zero-btn" value="0">0</button>
-			<button class="decimal" value=".">.</button>
-			<button class="equal-sign">=</button>
-		</div>
-		
 	</div>
 </div>
 
+<footer>
+	<div class="container footer">
+
+		<div class="foot-item">
+			<h1>Sweet</h1>
+			<!-- <h4>Mode</h4> -->
+		</div>
+		<div class="foot-item middle"></div>
+		<div class="foot-item sosmed">
+			<h2>Contact Us<hr></h2>
+			<h3><span class="fab fa-facebook-square"></span> Facebook_sweet</h3>
+			<h3><span class="fab fa-twitter-square"></span> Twitter_sweet</h3>
+			<h3><span class="fab fa-instagram"></span> Instagram_sweet</h3>
+			<h3><span class="fas fa-envelope-square"></span> Sweet@mail.com</h3>
+		</div>
+
+	</div>
+</footer>
 
 	<script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
