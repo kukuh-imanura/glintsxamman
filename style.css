@@ -50,8 +50,8 @@ header {
 
 .nav-item {
 	float: right;
-	height: 50px;
-	line-height: 50px;
+	height: 10px;
+	line-height: 10px;
 }
 
 .nav-item li {
@@ -68,21 +68,16 @@ header {
 }
 
 .mode {
-	/*background-color: gray;*/
 	border-left: 3px solid white;
-	/*border-radius: 5px;*/
 	margin-left: 20px;
 	padding: 0px;
 }
 
 .mode span {
 	margin: 0px 0px 0px 5px;
-	/*border-bottom: 2px solid white;*/
 	position: relative;
 	top: 2px;
-	/*font-size: 20px;*/
 	color: white;
-	/*background-color: */
 }
 
 .mode span:hover {
